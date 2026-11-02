@@ -72,7 +72,7 @@ response = requests.get(
     params={
         "query": "https://www.redfin.com/WA/Seattle/1120-8th-Ave-98101/unit-1603/home/14602?region_id=16163&region_type=6",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -232,7 +232,7 @@ response = requests.get(
     params={
         "query": "https://www.redfin.com/city/16163/WA/Seattle",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
